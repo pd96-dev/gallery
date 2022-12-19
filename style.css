@@ -1,0 +1,77 @@
+*{
+    margin: 5;
+    padding: 5;
+
+}
+body{
+    background: linear-gradient(120deg,rgb(223, 189, 150) 30%,rgb(228, 221, 163) 40%);
+}
+#top{
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+    color: cornflowerblue;
+}
+nav{
+    background-color: slategrey;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0%;
+}
+nav a{
+    color: rgb(247, 211, 9);
+    text-decoration: none;
+}
+nav a:hover{
+    color: violet;
+}
+
+figcaption {
+    margin: 10px 0 0 0;
+    font-variant: small-caps;
+    font-family: Arial;
+    font-weight: bold;
+    color: #bb3333;
+}
+h2{
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+/* First the Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* The Picture Frame */
+  .gallery-frame {
+    padding: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #333;
+    color: #d9d9d9;
+  }
+  
+  /* The Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
+  img:hover {
+    opacity: .7;
+  }
